@@ -1,0 +1,158 @@
+html {
+  box-sizing: border-box;
+  font-family: "berthold", Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 200; }
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #fffaeb; }
+
+nav {
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  align-content: space-between;
+  text-align: center; }
+
+nav p {
+  margin: 0; }
+
+.logo {
+  max-width: 250px;
+  margin: 0 auto; }
+
+.container {
+  display: grid; }
+
+header {
+  position: relative;
+  background-color: #bada55;
+  height: 70vh;
+  background: url(https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_auto,w_1734/v1547136071/CakeShop/baked-bakery-cakes-47734.jpg) no-repeat center;
+  background-size: 900px;
+  background-position: -100px;
+  border-bottom: 3px solid white; }
+  @media only screen and (min-width: 850px) {
+    header {
+      background-size: 100%;
+      background-position: 0px; } }
+
+header h1 {
+  font-size: 60px;
+  font-family: arial;
+  margin-top: 20%;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.favourites {
+  position: relative;
+  color: white;
+  text-shadow: 1px 1px 1px black; }
+
+.panels {
+  min-height: 40vh;
+  overflow: hidden;
+  display: flex; }
+
+.panel {
+  border: 1px solid white;
+  background: #6B0F9C;
+  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+  color: white;
+  text-align: center;
+  align-items: center;
+  /* Safari transitionend event.propertyName === flex */
+  /* Chrome + FF transitionend event.propertyName === flex-grow */
+  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
+  font-size: 12px;
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  justify-content: center;
+  display: flex;
+  flex-direction: column; }
+
+.panel1 {
+  background-image: url(https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_auto/v1547307591/CakeShop/cakes/anniversary-beautiful-birthday-433527.jpg); }
+
+.panel2 {
+  background-image: url(https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_auto/v1547307586/CakeShop/cakes/blur-cake-cheesecake-219293.jpg); }
+
+.panel3 {
+  background-image: url(https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_auto/v1547307589/CakeShop/cakes/artificial-flowers-baked-cake-1713159.jpg); }
+
+.panel4 {
+  background-image: url(https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_auto/v1547307582/CakeShop/cakes/bakery-baking-cake-264892.jpg); }
+
+.panel5 {
+  background-image: url(https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_auto/v1547307587/CakeShop/cakes/cake-chocolate-cream-635409.jpg); }
+
+/* Flex Items */
+.panel > * {
+  margin: 0;
+  transition: transform 0.5s;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.panel > *:first-child {
+  transform: translateY(-100%); }
+
+.panel.open-active > *:first-child {
+  transform: translateY(0); }
+
+.panel > *:last-child {
+  transform: translateY(100%); }
+
+.panel.open-active > *:last-child {
+  transform: translateY(0); }
+
+.panel p {
+  text-transform: uppercase;
+  font-family: 'Amatic SC', cursive;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+  font-size: 2em; }
+
+.panel p:nth-child(2) {
+  font-size: 4em; }
+
+.panel.open {
+  transition: all 0.5s ease-in-out;
+  flex: 5;
+  font-size: 14px; }
+
+@media only screen and (max-width: 600px) {
+  .panel p {
+    font-size: 1em; } }
+.about {
+  background-color: #fffaeb;
+  max-width: 800px;
+  height: 800px;
+  margin-top: 20px; }
+  .about .bakeryImages {
+    position: relative; }
+  .about .bakery {
+    width: 100%;
+    max-width: 700px; }
+  .about .logo {
+    position: absolute;
+    width: 100px;
+    bottom: -50px;
+    left: 36%; }
+  .about .aboutTextWrapper {
+    margin: 10px; }
+  .about h2 {
+    margin-top: 2em; }
+
+.contact {
+  background-color: aliceblue; }
+
+footer {
+  background-color: gray; }
+
+/*# sourceMappingURL=cake.css.map */
