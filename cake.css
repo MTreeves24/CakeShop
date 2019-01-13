@@ -31,7 +31,7 @@ header {
   position: relative;
   background-color: #bada55;
   height: 70vh;
-  background: url(https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_auto,w_1734/v1547136071/CakeShop/baked-bakery-cakes-47734.jpg) no-repeat center;
+  background: url(https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_auto:low,w_2009/v1547136071/CakeShop/baked-bakery-cakes-47734.jpg) no-repeat center;
   background-size: 900px;
   background-position: -100px;
   border-bottom: 3px solid white; }
@@ -44,14 +44,14 @@ header h1 {
   font-size: 60px;
   font-family: arial;
   margin-top: 20%;
-  color: white;
+  color: #fffaeb;
   text-shadow: 1px 1px 1px black;
   background-color: rgba(0, 0, 0, 0.2); }
 
 .favourites {
   position: relative;
-  color: white;
-  text-shadow: 1px 1px 1px black; }
+  color: #f09ec4;
+  text-shadow: 1px 1px 1px #333; }
 
 .panels {
   min-height: 40vh;
@@ -77,19 +77,19 @@ header h1 {
   flex-direction: column; }
 
 .panel1 {
-  background-image: url(https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_auto/v1547307591/CakeShop/cakes/anniversary-beautiful-birthday-433527.jpg); }
+  background-image: url(https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_auto,w_1914/v1547307591/CakeShop/cakes/anniversary-beautiful-birthday-433527.jpg); }
 
 .panel2 {
-  background-image: url(https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_auto/v1547307586/CakeShop/cakes/blur-cake-cheesecake-219293.jpg); }
+  background-image: url(https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_auto,w_1556/v1547307586/CakeShop/cakes/blur-cake-cheesecake-219293.jpg); }
 
 .panel3 {
-  background-image: url(https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_auto/v1547307589/CakeShop/cakes/artificial-flowers-baked-cake-1713159.jpg); }
+  background-image: url(https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_auto,w_1059/v1547307589/CakeShop/cakes/artificial-flowers-baked-cake-1713159.jpg); }
 
 .panel4 {
-  background-image: url(https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_auto/v1547307582/CakeShop/cakes/bakery-baking-cake-264892.jpg); }
+  background-image: url(https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_auto,w_832/v1547307582/CakeShop/cakes/bakery-baking-cake-264892.jpg); }
 
 .panel5 {
-  background-image: url(https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_auto/v1547307587/CakeShop/cakes/cake-chocolate-cream-635409.jpg); }
+  background-image: url(https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_auto,w_1529/v1547307587/CakeShop/cakes/cake-chocolate-cream-635409.jpg); }
 
 /* Flex Items */
 .panel > * {
@@ -129,9 +129,30 @@ header h1 {
 @media only screen and (max-width: 600px) {
   .panel p {
     font-size: 1em; } }
+button {
+  color: #444444;
+  background: #F3F3F3;
+  border: 1px #DADADA solid;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 9pt;
+  outline: none; }
+
+button:hover {
+  border: 1px #C6C6C6 solid;
+  box-shadow: 1px 1px 1px #EAEAEA;
+  color: #333333;
+  background: #F7F7F7; }
+
+button:active {
+  box-shadow: inset 1px 1px 1px #DFDFDF; }
+
+.text-wrapper {
+  max-width: 800px;
+  padding: 20px; }
+
 .about {
   background-color: #fffaeb;
-  max-width: 800px;
   height: 800px;
   margin-top: 20px; }
   .about .bakeryImages {
@@ -144,15 +165,33 @@ header h1 {
     width: 100px;
     bottom: -50px;
     left: 36%; }
-  .about .aboutTextWrapper {
-    margin: 10px; }
   .about h2 {
     margin-top: 2em; }
+  .about .readMore {
+    padding: 10px;
+    background-color: #391113;
+    color: #fffaeb; }
 
 .contact {
-  background-color: aliceblue; }
+  background-color: white; }
+  .contact .emailSignUp {
+    display: flex;
+    justify-content: center; }
+    .contact .emailSignUp input {
+      padding: 10px; }
 
 footer {
-  background-color: gray; }
+  background-color: #391113; }
+  footer .footerLogo {
+    margin: 30px;
+    max-width: 250px; }
+  footer .footerlinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    footer .footerlinks a {
+      text-decoration: none;
+      color: white;
+      font-size: 17px;
+      padding: 5px; }
 
 /*# sourceMappingURL=cake.css.map */
