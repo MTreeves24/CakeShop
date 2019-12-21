@@ -2,43 +2,58 @@ html {
   box-sizing: border-box;
   font-family: "berthold", Helvetica, sans-serif;
   font-size: 20px;
-  font-weight: 200; }
+  font-weight: 200;
+}
 
 body {
   margin: 0;
   padding: 0;
   text-align: center;
-  background-color: #fffaeb; }
+  background-color: #fffaeb;
+}
 
 nav {
   padding: 5px;
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
   align-content: space-between;
-  text-align: center; }
+  text-align: center;
+}
 
 nav p {
-  margin: 0; }
+  margin: 0;
+}
 
 .logo {
   max-width: 250px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .container {
-  display: grid; }
+  display: grid;
+}
 
 header {
   position: relative;
   background-color: #bada55;
-  height: 70vh;
+  height: 80vh;
   background: url(https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_auto:low,w_2009/v1547136071/CakeShop/baked-bakery-cakes-47734.jpg) no-repeat center;
   background-size: 900px;
   background-position: -100px;
-  border-bottom: 3px solid white; }
-  @media only screen and (min-width: 850px) {
-    header {
-      background-size: 100%;
-      background-position: 0px; } }
+}
+@media only screen and (min-width: 850px) {
+  header {
+    background-size: 100%;
+    background-position: 0px;
+  }
+}
+header svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10vw;
+}
 
 header h1 {
   font-size: 60px;
@@ -46,17 +61,20 @@ header h1 {
   margin-top: 20%;
   color: #fffaeb;
   text-shadow: 1px 1px 1px black;
-  background-color: rgba(0, 0, 0, 0.2); }
+}
 
 .favourites {
   position: relative;
+  margin-top: -4%;
   color: #f09ec4;
-  text-shadow: 1px 1px 1px #333; }
+  text-shadow: 1px 1px 1px #333;
+}
 
 .panels {
   min-height: 40vh;
   overflow: hidden;
-  display: flex; }
+  display: flex;
+}
 
 .panel {
   border: 1px solid white;
@@ -74,22 +92,28 @@ header h1 {
   flex: 1;
   justify-content: center;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+}
 
 .panel1 {
-  background-image: url(https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_auto,w_1914/v1547307591/CakeShop/cakes/anniversary-beautiful-birthday-433527.jpg); }
+  background-image: url(https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_auto,w_1914/v1547307591/CakeShop/cakes/anniversary-beautiful-birthday-433527.jpg);
+}
 
 .panel2 {
-  background-image: url(https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_auto,w_1556/v1547307586/CakeShop/cakes/blur-cake-cheesecake-219293.jpg); }
+  background-image: url(https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_auto,w_1556/v1547307586/CakeShop/cakes/blur-cake-cheesecake-219293.jpg);
+}
 
 .panel3 {
-  background-image: url(https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_auto,w_1059/v1547307589/CakeShop/cakes/artificial-flowers-baked-cake-1713159.jpg); }
+  background-image: url(https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_auto,w_1059/v1547307589/CakeShop/cakes/artificial-flowers-baked-cake-1713159.jpg);
+}
 
 .panel4 {
-  background-image: url(https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_auto,w_832/v1547307582/CakeShop/cakes/bakery-baking-cake-264892.jpg); }
+  background-image: url(https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_auto,w_832/v1547307582/CakeShop/cakes/bakery-baking-cake-264892.jpg);
+}
 
 .panel5 {
-  background-image: url(https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_auto,w_1529/v1547307587/CakeShop/cakes/cake-chocolate-cream-635409.jpg); }
+  background-image: url(https://res.cloudinary.com/mtreeves24/image/upload/c_scale,f_auto,q_auto,w_1529/v1547307587/CakeShop/cakes/cake-chocolate-cream-635409.jpg);
+}
 
 /* Flex Items */
 .panel > * {
@@ -98,37 +122,47 @@ header h1 {
   flex: 1 0 auto;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+}
 
 .panel > *:first-child {
-  transform: translateY(-100%); }
+  transform: translateY(-100%);
+}
 
 .panel.open-active > *:first-child {
-  transform: translateY(0); }
+  transform: translateY(0);
+}
 
 .panel > *:last-child {
-  transform: translateY(100%); }
+  transform: translateY(100%);
+}
 
 .panel.open-active > *:last-child {
-  transform: translateY(0); }
+  transform: translateY(0);
+}
 
 .panel p {
   text-transform: uppercase;
-  font-family: 'Amatic SC', cursive;
+  font-family: "Amatic SC", cursive;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-  font-size: 2em; }
+  font-size: 2em;
+}
 
 .panel p:nth-child(2) {
-  font-size: 4em; }
+  font-size: 4em;
+}
 
 .panel.open {
   transition: all 0.5s ease-in-out;
   flex: 5;
-  font-size: 14px; }
+  font-size: 14px;
+}
 
 @media only screen and (max-width: 600px) {
   .panel p {
-    font-size: 1em; } }
+    font-size: 1em;
+  }
+}
 button {
   color: #444444;
   background: #F3F3F3;
@@ -136,62 +170,88 @@ button {
   padding: 10px;
   font-weight: bold;
   font-size: 9pt;
-  outline: none; }
+  outline: none;
+}
 
 button:hover {
   border: 1px #C6C6C6 solid;
   box-shadow: 1px 1px 1px #EAEAEA;
   color: #333333;
-  background: #F7F7F7; }
+  background: #F7F7F7;
+}
 
 button:active {
-  box-shadow: inset 1px 1px 1px #DFDFDF; }
+  box-shadow: inset 1px 1px 1px #DFDFDF;
+}
 
 .text-wrapper {
   max-width: 800px;
-  padding: 20px; }
+  padding: 20px;
+}
 
 .about {
   background-color: #fffaeb;
   height: 800px;
-  margin-top: 20px; }
-  .about .bakeryImages {
-    position: relative; }
-  .about .bakery {
-    width: 100%;
-    max-width: 700px; }
-  .about .logo {
-    position: absolute;
-    width: 100px;
-    bottom: -50px;
-    left: 36%; }
-  .about h2 {
-    margin-top: 2em; }
-  .about .readMore {
-    padding: 10px;
-    background-color: #391113;
-    color: #fffaeb; }
+  margin-top: 20px;
+}
+.about .bakeryImages {
+  position: relative;
+}
+.about .bakery {
+  width: 100%;
+  max-width: 700px;
+}
+.about .logo {
+  position: absolute;
+  width: 100px;
+  bottom: -50px;
+  left: 50%;
+  right: 50%;
+}
+.about h2 {
+  margin-top: 2em;
+}
+.about .readMore {
+  padding: 10px;
+  background-color: #391113;
+  color: #fffaeb;
+}
 
 .contact {
-  background-color: white; }
-  .contact .emailSignUp {
-    display: flex;
-    justify-content: center; }
-    .contact .emailSignUp input {
-      padding: 10px; }
+  background-color: white;
+}
+.contact .emailSignUp {
+  display: flex;
+  justify-content: center;
+}
+.contact .emailSignUp input {
+  padding: 10px;
+}
+.contact .emailSignUp .styledButton {
+  background: #391113;
+  color: #f09ec4;
+  font-weight: 600;
+}
 
 footer {
-  background-color: #391113; }
-  footer .footerLogo {
-    margin: 30px;
-    max-width: 250px; }
-  footer .footerlinks {
-    display: grid;
-    grid-template-columns: 1fr 1fr; }
-    footer .footerlinks a {
-      text-decoration: none;
-      color: white;
-      font-size: 17px;
-      padding: 5px; }
+  background-color: #391113;
+}
+footer .footerLogo {
+  margin: 30px;
+  max-width: 250px;
+}
+footer .footerlinks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+footer .footerlinks a {
+  text-decoration: none;
+  color: #fff5d6;
+  font-size: 17px;
+  padding: 5px;
+}
+footer .footerlinks a:hover {
+  opacity: 0.5;
+}
 
 /*# sourceMappingURL=cake.css.map */
